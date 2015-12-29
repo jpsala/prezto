@@ -11,3 +11,5 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
 fi
 
 # Customize to your needs...
+alias s='subl $* > /dev/null 2>&1'
+alias gitlog='smartgit --log . &'
