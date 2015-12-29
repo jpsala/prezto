@@ -10,4 +10,6 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
 fi
 
-# Customize to your needs...
+alias s='subl $* > /dev/null 2>&1'
+alias gitlog='smartgit --log . &'
+alias gcA='git commit $* -m"auto"'
